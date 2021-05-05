@@ -12,6 +12,7 @@ namespace MikesGenerals
         private string Name;
         private string Address;
         private static int count = 0;
+
         public Customer()
         {
             Id = ++count;

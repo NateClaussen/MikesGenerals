@@ -10,7 +10,12 @@ namespace MikesGenerals
     {
         private Product Product;
         private int Quantity;
-
+        
+        public ShelfProduct(Product product, int initialQuantity)
+        {
+            Product = product;
+            Quantity = initialQuantity;
+        }
         public int GetId()
         {
             return Product.GetId();

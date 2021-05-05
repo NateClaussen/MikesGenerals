@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nathaniel.claussen\\Desktop\\MikesGeneralsRepo\\MikesGenerals\\MikesGenerals\\MikesGenerals.csproj",
+      "projectUniqueName": "H:\\MikesGeneralsRepo\\MikesGenerals\\MikesGenerals\\MikesGenerals.csproj",
       "projectName": "MikesGenerals",
-      "projectPath": "C:\\Users\\nathaniel.claussen\\Desktop\\MikesGeneralsRepo\\MikesGenerals\\MikesGenerals\\MikesGenerals.csproj",
+      "projectPath": "H:\\MikesGeneralsRepo\\MikesGenerals\\MikesGenerals\\MikesGenerals.csproj",
       "packagesPath": "C:\\Users\\nathaniel.claussen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nathaniel.claussen\\Desktop\\MikesGeneralsRepo\\MikesGenerals\\MikesGenerals\\obj\\",
+      "outputPath": "H:\\MikesGeneralsRepo\\MikesGenerals\\MikesGenerals\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
