@@ -12,7 +12,17 @@ namespace MikesGenerals
         private string Name;
         private List<Product> Products;
         private List<ShelfProduct> ShelfProducts;
+        
+        /*
+         * Extra stuff that is not part of the assignment
+        private static int instanceCount = 0;
 
+        public Store(string name)
+        {
+            Name = name;
+            Id = ++instanceCount;
+        }
+        */
         public void AddProduct(Product product, int amount)
         {
             /*
@@ -40,7 +50,19 @@ namespace MikesGenerals
             var index = ShelfProducts.IndexOf(ShelfProducts.Where(p => p.GetId() == productId).FirstOrDefault());
             //ShelfProducts[index].RemoveProductCount(amount);
             */
-
+            int removeCount = 0;
+            for(int i = 0; i < Products.Count; i++)
+            {
+                if(Products[i].GetId() == productId)
+                {
+                    Products.RemoveAt(i);
+                    removeCount++;
+                }
+                if(removeCount >= amount)
+                {
+                    break;
+                }
+            }
         }
         public void PurchaseResolve(ShoppingCart cart)
         {
