@@ -4,19 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MikesGenerals
+namespace MikeGenerals.BusinessLogic.Models
 {
     public class Customer
     {
-        private readonly int Id;
+        private int Id;
         private string Name;
         private string Address;
         private static int count = 0;
+
         public Customer()
         {
             Id = ++count;
         }
 
+        public void SetId(int id)
+        {
+            Id = id;
+        }
+
+       
         public string GetName()
         {
             return Name;

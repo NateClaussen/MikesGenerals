@@ -4,14 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MikesGenerals
+namespace MikeGenerals.BusinessLogic.Models
 {
     public class Product
     {
-        private readonly int Id;
+        private int Id;
         private string Name;
         private decimal Price;
 
+        public void SetId(int id)
+        {
+            Id = id;
+        }
         public int GetId()
         {
             return Id;

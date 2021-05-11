@@ -4,13 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MikesGenerals
+namespace MikeGenerals.BusinessLogic.Models
 {
     public class ShelfProduct
     {
         private Product Product;
         private int Quantity;
-
+        
+        public ShelfProduct(Product product, int initialQuantity)
+        {
+            Product = product;
+            Quantity = initialQuantity;
+        }
         public int GetId()
         {
             return Product.GetId();
